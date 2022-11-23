@@ -1,0 +1,71 @@
+body{
+    background: #efefef;
+    color: #0a1b2c;
+}
+.dark{
+    background: #58001b;
+    color: #efefef;
+}
+.dark .container,
+.dark .traditional-gallery,
+.dark .digital-gallery{
+    background: rgba(139, 34, 48, 0.2);
+    box-shadow: 0 0 1px #e0ab4c,
+                0 0 7px #8b2230,
+                0 0 21px #8b2230,
+                0 0 42px #58001b,
+                0 0 64px #58001b;
+}
+.dark a{
+    color: #e0ab4c;
+}
+.dark .theme-button{
+    background: #efefef;
+    color: #e0ab4c;
+}
+.dark .red-vase:hover,
+.dark .green-vase:hover,
+.dark .seasons1-vase:hover,
+.dark .seasons2-vase:hover,
+.dark .lion-portret:hover,
+.dark .koi-fish-side:hover,
+.dark .wealth-side:hover,
+.dark .geisha1-vase:hover,
+.dark .geisha2-vase:hover{
+    box-shadow: 0 0 2px #e0ab4c,
+                0 0 4px #e0ab4c,
+                0 0 4px #e0ab4c,
+                0 0 21px #8b2230,
+                0 0 42px #58001b;
+}
+.dark .learn-link:hover{
+    box-shadow: 0 0 2px #e0ab4c,
+    0 0 4px #e0ab4c,
+    0 0 4px #e0ab4c,
+    0 0 21px #8b2230,
+    0 0 42px #58001b;
+}
+.container{
+    background: #dadedf;
+    border-radius: 4px;
+    margin: 40px -10px;
+    padding: 10px;
+}
+.theme-button{
+    border: 1px groove rgba(164, 161, 161, 0.6);
+    border-radius: 4px;
+    color: #0a1b2c;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 12px;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px;
+    text-align: center;
+}
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
