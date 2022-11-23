@@ -69,3 +69,100 @@ h3{
     font-size: 25px;
     text-align: center;
 }
+h2{
+    font-family:'Great Vibes', cursive;
+    font-size: 50px;
+    margin: 70px;
+    text-align: center;
+}
+.benefits{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+ul{
+    list-style: none;
+    margin-bottom: 30px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.wiki-link,
+.digital-wiki-link{
+    color: #b6b4b4;
+    font-size: 20px;
+    margin: 5px 120px;
+    text-decoration: none;
+}
+.traditional-gallery img{
+    border-radius: 4px;
+    width: 100%;
+}
+.my-work,
+.my-digital-pieces{
+    margin-top: 5px;
+}
+.traditional-gallery{
+    background: #dadedf;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 10px;
+    margin: 40px -10px;
+    padding: 40px 140px;
+}
+.lion-portret{
+    margin: -15px 0;
+    transition: transform 250ms ease-in-out;
+}
+.red-vase,
+.green-vase,
+.seasons1-vase,
+.seasons2-vase,
+.koi-fish-side,
+.wealth-side,
+.geisha1-vase,
+.geisha2-vase{
+    transition: transform 250ms ease-in-out; 
+}
+.red-vase:hover{
+    margin-left: 30px;
+}
+.red-vase:hover,
+.green-vase:hover,
+.seasons1-vase:hover,
+.seasons2-vase:hover,
+.lion-portret:hover,
+.koi-fish-side:hover,
+.wealth-side:hover,
+.geisha1-vase:hover,
+.geisha2-vase:hover{
+    box-shadow: 0 0 3px #adaaaa,
+                0 0 5px #adaaaa,
+                0 0 7px #adaaaa,
+                0 0 21px #efefef;
+     filter: brightness(110%);  
+     transform: scale(2.5);         
+}
+.geisha2-vase:hover{
+    margin-left: -30px;
+}
+.digital-gallery{
+    background: #dadedf;
+    display: flex;
+    justify-content: center;
+    margin: 40px -10px;
+    padding: 40px 140px;
+}
+.blue-birds,
+.girl-portret{
+    border-radius: 14px;
+    padding: 10px;
+    transition: transform 250ms ease-in-out;
+    width: 20%;
+}
+.blue-birds:hover,
+.girl-portret:hover{
+    transform: scale(1.5);
+}
