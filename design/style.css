@@ -166,3 +166,45 @@ a:hover{
 .girl-portret:hover{
     transform: scale(1.5);
 }
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin: 25px 120px 45px;
+}
+.ending-quote{
+    font-size: 20px;
+    margin: 30px 120px 40px;
+}
+.learn-link{
+    background-image: url("https://image.shutterstock.com/image-vector/seamless-zig-zag-vector-pattern-260nw-1974612461.jpg");
+    border-radius: 4px;
+    color: #e0ab4c;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 18%;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 250ms ease-in-out;
+}
+.learn-link:hover{
+    box-shadow: 0 0 1px #e0ab4c,
+                0 0 4px #e0ab4c,
+                0 0 7px #dadedf,
+                0 0 14px #dadedf;
+    transform: scale(1.2);
+    text-decoration: none;            
+}
+footer{
+    text-align: center;
+    margin-top: 60px;
+}
+.coder{
+    color:#b6b4b4;
+    text-decoration: none;
+}
+.coder:hover{
+    color: #e0ab4c;
+}
