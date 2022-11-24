@@ -1,27 +1,43 @@
+:root{
+    --primary-light-color: #efefef;
+    --primary-dark-color: #58001b;
+    --secondary-color: #0a1b2c;
+    --link-color: #e0ab4c;
+    --light-shadow-color: 0 0 3px #adaaaa,
+                          0 0 5px #adaaaa,
+                          0 0 7px #adaaaa,
+                          0 0 21px #efefef;
+    --dark-shadow-color: 0 0 1px #e0ab4c,
+                         0 0 7px #8b2230,
+                         0 0 21px #8b2230,
+                         0 0 42px #58001b,
+                         0 0 64px #58001b;
+     --dark-hover-color: 0 0 2px #e0ab4c,
+                         0 0 4px #e0ab4c,
+                         0 0 4px #e0ab4c,
+                         0 0 21px #8b2230,
+                         0 0 42px #58001b;
+}
 body{
-    background: #efefef;
-    color: #0a1b2c;
+    background: var(--primary-light-color);
+    color: var(--secondary-color);
 }
 .dark{
-    background: #58001b;
-    color: #efefef;
+    background: var(--primary-dark-color);
+    color: var(--primary-light-color);
 }
 .dark .container,
 .dark .traditional-gallery,
 .dark .digital-gallery{
     background: rgba(139, 34, 48, 0.2);
-    box-shadow: 0 0 1px #e0ab4c,
-                0 0 7px #8b2230,
-                0 0 21px #8b2230,
-                0 0 42px #58001b,
-                0 0 64px #58001b;
+    box-shadow: var(--dark-shadow-color);
 }
 .dark a{
-    color: #e0ab4c;
+    color: var(--link-color);
 }
 .dark .theme-button{
-    background: #efefef;
-    color: #e0ab4c;
+    background: var(--primary-light-color);
+    color: var(--link-color);
 }
 .dark .red-vase:hover,
 .dark .green-vase:hover,
@@ -32,18 +48,10 @@ body{
 .dark .wealth-side:hover,
 .dark .geisha1-vase:hover,
 .dark .geisha2-vase:hover{
-    box-shadow: 0 0 2px #e0ab4c,
-                0 0 4px #e0ab4c,
-                0 0 4px #e0ab4c,
-                0 0 21px #8b2230,
-                0 0 42px #58001b;
+    box-shadow: var(--dark-hover-color);
 }
 .dark .learn-link:hover{
-    box-shadow: 0 0 2px #e0ab4c,
-    0 0 4px #e0ab4c,
-    0 0 4px #e0ab4c,
-    0 0 21px #8b2230,
-    0 0 42px #58001b;
+    box-shadow: var(--dark-hover-color);
 }
 .container{
     background: #dadedf;
@@ -54,7 +62,7 @@ body{
 .theme-button{
     border: 1px groove rgba(164, 161, 161, 0.6);
     border-radius: 4px;
-    color: #0a1b2c;
+    color: var(--secondary-color);
     display: block;
     margin: 0 auto;
     padding: 5px 12px;
@@ -138,10 +146,7 @@ a:hover{
 .wealth-side:hover,
 .geisha1-vase:hover,
 .geisha2-vase:hover{
-    box-shadow: 0 0 3px #adaaaa,
-                0 0 5px #adaaaa,
-                0 0 7px #adaaaa,
-                0 0 21px #efefef;
+     box-shadow: var(--light-shadow-color);
      filter: brightness(110%);  
      transform: scale(2.5);         
 }
@@ -178,7 +183,7 @@ p{
 .learn-link{
     background-image: url("https://image.shutterstock.com/image-vector/seamless-zig-zag-vector-pattern-260nw-1974612461.jpg");
     border-radius: 4px;
-    color: #e0ab4c;
+    color: var(--link-color);
     display: block;
     font-size: 25px;
     font-weight: 600;
@@ -190,10 +195,7 @@ p{
     transition: transform 250ms ease-in-out;
 }
 .learn-link:hover{
-    box-shadow: 0 0 1px #e0ab4c,
-                0 0 4px #e0ab4c,
-                0 0 7px #dadedf,
-                0 0 14px #dadedf;
+    box-shadow: var(--light-shadow-color);
     transform: scale(1.2);
     text-decoration: none;            
 }
@@ -206,5 +208,5 @@ footer{
     text-decoration: none;
 }
 .coder:hover{
-    color: #e0ab4c;
+    color: var(--link-color);
 }
